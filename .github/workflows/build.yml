@@ -1,0 +1,25 @@
+name: Build Windows EXE (RMT System + أسواق بدر)
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        edition: [rmt, aswaq]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: { node-version: 20 }
+      - run: npm install
+      - run: node scripts/brand.js ${{ matrix.edition }}
+      - run: npm run prep
+      - run: node scripts/check.js
+      - run: npx electron-builder --win --publish never
+      - uses: actions/upload-artifact@v5
+        with:
+          name: ${{ matrix.edition }}-windows
+          path: dist/*.exe
