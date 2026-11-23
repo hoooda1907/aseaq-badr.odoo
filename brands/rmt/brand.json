@@ -1,0 +1,16 @@
+{
+  "id": "rmt",
+  "name": "RMT System",
+  "appId": "com.rmtsystem.pos",
+  "pkgName": "rmt-system",
+  "productName": "RMT System",
+  "userDataFromName": false,
+  "shortcut": "RMT System",
+  "setup": "RMT-System-Setup",
+  "portable": "RMT-System-Portable",
+  "folder": "RMT System",
+  "adminName": "admin",
+  "adminPw": "admin123",
+  "licensed": true,
+  "licFile": ".rmt-system.lic"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "aswaq",
+  "name": "أسواق بدر",
+  "appId": "com.aswaqbadr.pos",
+  "pkgName": "aswaq-badr",
+  "productName": "AswaqBadr",
+  "userDataFromName": true,
+  "shortcut": "أسواق بدر",
+  "setup": "AswaqBadr-Setup",
+  "portable": "AswaqBadr-Portable",
+  "folder": "أسواق بدر",
+  "adminName": "أسواق بدر",
+  "adminPw": "2027",
+  "licensed": false,
+  "licFile": ".aswaq-badr.lic"
+}
